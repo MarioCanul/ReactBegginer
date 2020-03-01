@@ -38,10 +38,10 @@ module.exports = {
                 ]
             },
             {
-                test: /\.{png|gif|jpg}$./,
+                test: /\.(jpe?g|png|gif|mp3)$/i,
                 use:
                 {
-                    'loader': 'file-loader',
+                    loader: 'file-loader',
                     options: {
                         name:'assets/[hash].[ext]'
                     }
